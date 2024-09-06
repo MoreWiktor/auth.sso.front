@@ -1,0 +1,3 @@
+[submodule "sso.types"]
+	path = src/shared/types
+	url = https://github.com/MoreWiktor/sso.types
