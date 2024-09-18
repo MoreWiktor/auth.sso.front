@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Enums, Types } from '../shared/types/page-init';
+import { Enums, Types } from '../shared/types/page-init-data';
 import { signupCommand } from '../api/commands/signup.command';
 
 export type ButtonPayload = { 
