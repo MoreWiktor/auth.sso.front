@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Enums, Types } from '../shared/types/page-init-data';
-import { signupCommand } from '../api/commands/signup.command';
 
 export type ButtonPayload = { 
     sendingData: Record<string, string | object>,
@@ -31,23 +30,6 @@ const Button = ({ payload }: { payload: ButtonPayload; key?: string; }) => {
             isLoading: true,
             disabled: true,
         });
-        signupCommand(payload.sendingData)
-            .then((res) => {
-                setState({
-                    isError: false,
-                    isLoading: false,
-                    data: res.data,
-                    disabled: false,
-                });
-            })
-            .catch((error) => {
-                setState({
-                    isLoading: false,
-                    isError: true,
-                    error,
-                    disabled: true,
-                });
-            });
         };
 
     let className = payload.style.base;
