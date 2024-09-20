@@ -1,3 +1,6 @@
 [submodule "sso.types"]
 	path = src/shared/types
 	url = https://github.com/MoreWiktor/sso.types
+[submodule "src/shared/grpc"]
+	path = src/shared/grpc
+	url = https://github.com/MoreWiktor/web-client.sso.proto
