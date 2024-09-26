@@ -3,4 +3,4 @@
 	url = https://github.com/MoreWiktor/sso.types
 [submodule "src/shared/grpc"]
 	path = src/shared/grpc
-	url = https://github.com/MoreWiktor/web-client.sso.proto
+	url = https://github.com/MoreWiktor/ts.sso.proto
